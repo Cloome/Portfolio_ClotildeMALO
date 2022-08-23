@@ -606,5 +606,29 @@ main .containergall .gallery .image:hover img{
     height: 10em;
     border-radius: 50%;
   }
+
+
+/* Responsive page info*/
+  .contenu {
+    margin-left:5%;
+    text-align: left;
+    margin-right: 5%;
+  }
+
+  .contenu p{
+    margin:0;
+  }
+
+
+  .contenu .last{
+    margin-bottom: 3em;
+  }
+
+  .contenu img{
+    margin-top: 1em;
+    width: 90%;
+    height:90%;
+  }
+
   
 }   
