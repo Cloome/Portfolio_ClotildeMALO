@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="autor" content="Clotilde MALO">
+        <meta name="keywords" content="Portfolio, communication, informatique, Clotilde, Malo">
+        <meta name="copyright" content="Clotilde MALO">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Clotilde MALO | Informatique</title>
+        <link rel="icon" href="images/Clotilde.png">
+        <link rel ="apple-touch-icon" href="images/Clotilde.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+	<body>
+        <!--- Barre de navigation-->
+		<nav>
+			<div class="profile" id="accueil">
+                <a href="index.html#accueil">
+				<img src="images/Clotilde.png" alt="profile photo" />
+                </a>
+				<h1> <a href="index.html#accueil">Clotilde Malo</a></h1>
+			</div>
+            
+            <ul>
+                
+                    <li>
+                        <a href="index.html#accueil">Accueil</a>
+                    </li>
+                    
+
+                
+                <li>
+                    <a href="index.html#cursus">Cursus</a>
+                </li> 
+               
+
+                
+                <li>
+                    <a href="index.html#portfolio"> Portfolio</a>
+                </li>
+                
+
+                
+                    <li>
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                
+            </ul>
+
+        </nav>
+
+        <main>
+        <div class="sous-page-txt">
+            <div class="entete">
+                <h2> Informatique </h2>
+                <p> Dans le cadre de divers projets scolaires, stages, projet tutoré et contrats j’ai réalisé différents projets. <br>
+                    Certains ont été réalisés seulement à but pédagogique et n’ont donc pas forcément été utilisés.<br>
+                    Site web, jeux vidéos, bases de données.
+                </p>
+            </div>
+        </div>  
+
+        <div class="contenu">
+
+            <h3> Création d'un jeu textuel </h3>
+            <p> Conception, développement, documentation et test d'un jeu textuel où le joueur chasse des monstres pour évoluer dans l'histoire. <br>
+                Il possède un inventaire et un équipement, et a accès à une forge, un marchand, une chambre et une cantine. </p>
+            <div class="logi"><p> 
+                Langage : FreePascal (IDE Lazarus). 
+            </p></div>
+            <a href="https://github.com/Cloome/JeuTextuel"> <p>Lien vers le GitHub</p> </a>
+            <div class="gallery">
+                <img src="images/info/MenuJeuTextuel.png" alt="Menu Jeu Textuel">
+                <img src="images/info/ChasseJeuTextuel.png" alt="Chasse Jeu Textuel">
+            </div>
+
+            <h3> Création d'un jeu </h3>
+            <p> Conception, développement, IHM, documentation et test d'un jeu 2D de type plateformer que l'on a appelé "Knight Survival" où l'on doit survivre le plus longtemps possible. <br>
+                Ce jeu possède un menu avec la possibilité de lancer une partie, de voir les scores, changer les paramètres ou quitter. </p>
+            <div class="logi"><p>
+                Langage : C# (IDE : Visual Studio).
+            </p></div>
+            <a href="https://github.com/Cloome/KnightSurvival"><p>Lien vers le GitHub</p></a>
+            <div class="gallery">
+                <img src="images/info/MenuKnightSurvival.png" alt="Menu Knight Survival">
+                <img src="images/info/KnightSurvival.png" alt="Knight Survival">
+            </div>
+
+            <h3> Création d'une base de données</h3>
+            <p> Conception et création d'une base de données à partir d'un cahier des charges. </p>
+            <div class="logi"><p>
+                Langage : MySQL (IDE : MySQL Workbench).
+            </p></div>
+            <div class="gallery">
+                <img src="images/info/MCD_BDD.png" alt="MCD Base de données">
+            </div>
+
+
+            <h3> Simulation d'entreprise et réalisation de son site </h3>
+            <p> 
+                Simulation d'une entreprise, de son positionnement managériale, ses démarches d'écoconception, analyse de son SWOT, création d'une charte graphique puis d'un site sur WordPress. <br>
+            </p>
+            <div class="logi"><p>
+                WordPress.
+            </p></div>
+            <div class="gallery">
+                <img src="images/info/HierarchieLudiciel.png" alt="Hiérarchisation du site Ludiciel">
+                <p></p>
+                <img src="images/info/LudicielSite.jfif" alt="Accueil site Ludiciel">
+            </div>
+
+            <h3> Gestion d'un site </h3>
+            <p> Pour PointBreak (magazine en ligne sur le jazz) et LeBloc (association qui organise des spectacles musicaux). <br>
+                Audit de site, responsive, analyse des statistiques, gestion SEO, amélioration de l'expérience utilisateur (UX). </p>
+            <div class="logi"><p>
+                WordPress, thème Divi.
+            </p></div>  
+
+            <h3> Création d'une Intelligence Artificielle</h3>
+            <p> Réalisation d'une Intelligence Artificielle en moins de 8h capable de jouer à un jeu. </p>
+            <div class="logi"><p>
+                Langage : C# (IDE : Visual Studio).
+            </p></div>
+            <div class="last">
+                <a href="https://github.com/Cloome/IA"> <p>Lien vers le GitHub</p></a>
+            </div>
+            
+         
+
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <div class ="image"><img src="images/info/MenuJeuTextuel.png" alt="Menu Jeu Textuel"></div>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            document.querySelectorAll('.gallery img').forEach(image =>{
+                image.onclick= () =>{ 
+                    document.querySelector('.popup-image').style.display = "block";
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+            });
+
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';
+
+            }
+
+        </script>
+        </div>
+
+
+        </main>
+
+         <!--- Footer-->
+         <footer>
+            <p> 
+                <a href="index.html#accueil"> Accueil </a> | <a href="index.html#cursus"> Cursus </a> | <a href="index.html#portfolio"> Portfolio </a> | <a href="index.html#contact"> Contact </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/clotilde-malo/"> <img src="images/linkedin.png" alt="LinkedIn" title="LinkedIn Clotilde MALO"/> Clotilde Malo</a>
+            </p>
+            <p> Copyright © 2022 - Tous droits réservés </p>
+
+        </footer>
+
+    </body>

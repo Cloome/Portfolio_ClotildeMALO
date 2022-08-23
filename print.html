@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="autor" content="Clotilde MALO">
+        <meta name="keywords" content="Portfolio, communication, informatique, Clotilde, Malo">
+        <meta name="copyright" content="Clotilde MALO">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Clotilde MALO | Informatique</title>
+        <link rel="icon" href="images/Clotilde.png">
+        <link rel ="apple-touch-icon" href="images/Clotilde.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+	<body>
+        <!--- Barre de navigation-->
+		<nav>
+			<div class="profile" id="accueil">
+                <a href="index.html#accueil">
+				<img src="images/Clotilde.png" alt="profile photo" />
+                </a>
+				<h1> <a href="index.html#accueil">Clotilde Malo</a></h1>
+			</div>
+            
+            <ul>
+                
+                    <li>
+                        <a href="index.html#accueil">Accueil</a>
+                    </li>
+                    
+
+                
+                <li>
+                    <a href="index.html#cursus">Cursus</a>
+                </li> 
+               
+
+                
+                <li>
+                    <a href="index.html#portfolio"> Portfolio</a>
+                </li>
+                
+
+                
+                    <li>
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                
+            </ul>
+
+        </nav>
+
+        <main>
+        <div class="sous-page-txt">
+            <div class="entete">
+                <h2> Communication <br> print </h2>
+                <p> Dans le cadre de divers projets scolaires, projets de bénévolat, stages, projet tutoré et contrats <br>
+                    j’ai effectué différents outils de communication print. <br>
+                    Certains ont été réalisés seulement à but pédagogique et n’ont donc pas forcément été utilisés.<br>
+                    Flyer, affiche, data visualisation. 
+                </p>
+            </div>
+        </div>  
+
+        <div class="containergall">
+            <div class ="gallery">
+                <div class="image"> <img src="images/print/Biennale-PropositionAffiche.jpg" alt="Affiche Biennale"> </div>
+                <div class ="image"><img src="images/print/BTSArcades-Flyer.png" alt="Flyer BTS Communication"></div>
+                <div class ="image"><img src="images/print/SecretdeMariee-Flyer.png" alt="Flyer Secret de Mariée"></div>
+                <div class ="image"><img src="images/print/SecretdeMariee-CovidAffiche.png" alt="Affiche Covid Secret de Mariée"></div>
+                <div class ="image"><img src="images/print/DatavisionLecture.jpg" alt="Datavision Lecture"></div>
+                <div class ="image"><img src="images/print/Shazam-AfficheElvis.png" alt="Affiche Shazam"></div> 
+            </div>
+
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <div class ="image"><img src="images/print/Biennale-PropositionAffiche.jpg" alt="Affiche Biennale"></div>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            document.querySelectorAll('.gallery img').forEach(image =>{
+                image.onclick= () =>{ 
+                    document.querySelector('.popup-image').style.display = "block";
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+            });
+
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';
+
+            }
+
+        </script>
+
+        </main>
+
+         <!--- Footer-->
+         <footer>
+            <p> 
+                <a href="index.html#accueil"> Accueil </a> | <a href="index.html#cursus"> Cursus </a> | <a href="index.html#portfolio"> Portfolio </a> | <a href="index.html#contact"> Contact </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/clotilde-malo/"> <img src="images/linkedin.png" alt="LinkedIn" title="LinkedIn Clotilde MALO"/> Clotilde Malo</a>
+            </p>
+            <p> Copyright © 2022 - Tous droits réservés </p>
+
+        </footer>
+
+    </body>

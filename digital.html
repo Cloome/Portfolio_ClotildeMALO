@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="autor" content="Clotilde MALO">
+        <meta name="keywords" content="Portfolio, communication, informatique, Clotilde, Malo">
+        <meta name="copyright" content="Clotilde MALO">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Clotilde MALO | Informatique</title>
+        <link rel="icon" href="images/Clotilde.png">
+        <link rel ="apple-touch-icon" href="images/Clotilde.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+	<body>
+        <!--- Barre de navigation-->
+		<nav>
+			<div class="profile" id="accueil">
+                <a href="index.html#accueil">
+				<img src="images/Clotilde.png" alt="profile photo" />
+                </a>
+				<h1> <a href="index.html#accueil">Clotilde Malo</a></h1>
+			</div>
+            
+            <ul>
+                
+                    <li>
+                        <a href="index.html#accueil">Accueil</a>
+                    </li>
+                    
+
+                
+                <li>
+                    <a href="index.html#cursus">Cursus</a>
+                </li> 
+               
+
+                
+                <li>
+                    <a href="index.html#portfolio"> Portfolio</a>
+                </li>
+                
+
+                
+                    <li>
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                
+            </ul>
+
+        </nav>
+
+        <main>
+        <div class="sous-page-txt">
+            <div class="entete">
+                <h2> Communication <br> digitale </h2>
+                <p> Dans le cadre de divers projets scolaires, projets de bénévolat, stages, projet tutoré et contrats <br>
+                    j’ai préparé des supports digitaux. <br>
+                    Certains ont été réalisés seulement à but pédagogique et n’ont donc pas forcément été utilisés.<br>
+                    Publication sur les réseaux sociaux, rétroplanning, newsletter, optimisation SEO.
+                </p>
+            </div>
+        </div>  
+
+        <div class="containergall">
+            <div class ="gallery">
+                <div class="image"> <img src="images/digital/Aigle-Newsletter.jpg" alt="Newsletter Aigle"> </div>
+                <div class="image"> <img src="images/digital/LesPopiette-Newsletter.jpg" alt="Newsletter Les Popiettes"> </div>
+                <div class="image"> <img src="images/digital/Kinoscope-Retroplanning.jpg" alt="Retroplanning Kinoscope"> </div>
+                <div class="image"> <img src="images/digital/Indicecret-ConcoursNoel (1).jpg" alt="Concours L'Indicecret"> </div>
+                <div class="image"> <img src="images/digital/Indicecret-ConcoursNoel (4).jpg" alt="Concours L'Indicecret"> </div>
+                <div class="image"> <img src="images/digital/CHU-ExemplePubli (1).png" alt="CHU Exemple Publication"> </div>
+                <div class="image"> <img src="images/digital/CHU-ExemplePubli (4).png" alt="CHU Exemple Publication"> </div>
+                <div class="image"> <img src="images/digital/Artenza-Insta.jpg" alt="Artenza Publication Instagram"> </div>
+                <div class="image"> <img src="images/digital/Artenza-Instaé.jpg" alt="Artenza Publication Instagram"> </div>
+                <div class="image"> <img src="images/digital/ArtenzaLabophoto-Story (1).jpg" alt="Artenza Stories Instagram"> </div>
+                <div class="image"> <img src="images/digital/Artenza-Boutique (3).jpg" alt="Artenza Boutique Instagram"> </div>
+                <div class="image"> <img src="images/digital/Artenza-Boutique (4).jpg" alt="Artenza Boutique Facebook"> </div>
+                <div class="image"> <img src="images/digital/Artenza-Pinterest (1).jpg" alt="Artenza Pinterest"> </div>
+                <div class="image"> <img src="images/digital/Artenza-Pinterest (2).jpg" alt="Artenza Pinterest"> </div>
+                <div class="image"> <img src="images/digital/Labophoto-Facebook (1).jpg" alt="Labophoto Publication Facebook"> </div>
+                <div class="image"> <img src="images/digital/Labophoto-Facebook (2).jpg" alt="Labophoto Publication Facebook"> </div>
+                <div class="image"> <img src="images/digital/Kinoscope-Publication1.png" alt="Kinoscope Publication Facebook"> </div>
+                <div class="image"> <img src="images/digital/Kinoscope-Publication2.png" alt="Kinoscope Publication Facebook"> </div>
+                <div class="image"> <img src="images/digital/Kinoscope-Publication4.png" alt="Kinoscope Publication Facebook"> </div>
+                <div class="image"> <img src="images/digital/PointBreak-SEO.png" alt="PointBreak SEO du site"> </div>
+
+                
+
+            </div>
+
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <div class ="image"><img src="images/print/Biennale-PropositionAffiche.jpg" alt="Affiche Biennale"></div>
+
+            </div>
+
+        </div>
+
+        <script>
+
+            document.querySelectorAll('.gallery img').forEach(image =>{
+                image.onclick= () =>{ 
+                    document.querySelector('.popup-image').style.display = "block";
+                    document.querySelector('.popup-image img').src = image.getAttribute('src');
+                }
+            });
+
+            document.querySelector('.popup-image span').onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'none';
+
+            }
+
+        </script>
+
+        </main>
+
+         <!--- Footer-->
+         <footer>
+            <p> 
+                <a href="index.html#accueil"> Accueil </a> | <a href="index.html#cursus"> Cursus </a> | <a href="index.html#portfolio"> Portfolio </a> | <a href="index.html#contact"> Contact </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/clotilde-malo/"> <img src="images/linkedin.png" alt="LinkedIn" title="LinkedIn Clotilde MALO"/> Clotilde Malo</a>
+            </p>
+            <p> Copyright © 2022 - Tous droits réservés </p>
+
+        </footer>
+
+    </body>
